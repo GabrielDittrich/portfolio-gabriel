@@ -1,0 +1,19 @@
+.projects {
+  background-color: var(--color-surface);
+}
+
+.projects__grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+}
+
+@media (max-width: 760px) {
+  .projects__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .project-card--featured {
+    grid-column: auto;
+  }
+}
