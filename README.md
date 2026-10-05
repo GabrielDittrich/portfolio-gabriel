@@ -4,19 +4,13 @@ Portfólio profissional desenvolvido para apresentar minha trajetória, experiê
 
 Meu foco principal é o desenvolvimento back-end com **C#**, **.NET**, **ASP.NET Core**, **APIs REST** e **bancos de dados**, complementado por conhecimentos em **React** e **TypeScript**.
 
+[![Acessar portfólio](https://img.shields.io/badge/Acessar_portfólio-38BDF8?style=for-the-badge&logoColor=0F172A)](https://gabrieldittrich.github.io/portfolio-gabriel/)
+
 ## Status do projeto
 
-Em desenvolvimento.
+✅ **Publicado e em evolução**
 
-O portfólio já possui suas principais seções implementadas e está passando pelas etapas finais de revisão, documentação, acessibilidade e preparação para publicação.
-
-## Demonstração
-
-O link do portfólio será adicionado após a publicação.
-
-<!-- Depois da publicação, substitua o texto acima por:
-[Acessar portfólio](https://gabrieldittrich.github.io/portfolio-gabriel/)
--->
+A versão atual está disponível no GitHub Pages e conta com deploy automático pelo GitHub Actions.
 
 ## Funcionalidades
 
@@ -134,6 +128,9 @@ Foram utilizados recursos como CSS Grid, Flexbox, `minmax()`, `clamp()` e media 
 
 ```text
 portfolio-gabriel/
+├── .github/
+│   └── workflows/
+│       └── deploy.yml
 ├── public/
 │   ├── images/
 │   │   └── gabriel-dittrich.webp
@@ -195,7 +192,7 @@ cd portfolio-gabriel
 Instale as dependências:
 
 ```bash
-npm install
+npm ci
 ```
 
 Inicie o ambiente de desenvolvimento:
@@ -207,7 +204,7 @@ npm run dev
 O Vite mostrará no terminal o endereço local da aplicação, normalmente:
 
 ```text
-http://localhost:5173
+http://localhost:5173/portfolio-gabriel/
 ```
 
 ## Scripts disponíveis
@@ -248,14 +245,23 @@ npm run preview
 - Verificação do currículo em PDF
 - Testes das imagens em diferentes larguras
 
+### Lighthouse
+
+Avaliação realizada na versão publicada:
+
+- Performance: **100**
+- Acessibilidade: **100**
+- Boas práticas: **100**
+- SEO: **100**
+
+> As pontuações podem apresentar pequenas variações conforme o dispositivo e as condições da execução.
+
 ## Próximas melhorias
 
-- Publicar o portfólio
-- Adicionar o endereço publicado ao README
-- Adicionar uma captura da página inicial ao README
-- Executar o Lighthouse na versão publicada
-- Revisar os projetos conforme novas funcionalidades forem desenvolvidas
+- Adicionar uma captura atualizada da página inicial ao README
+- Atualizar os projetos conforme novas funcionalidades forem desenvolvidas
 - Adicionar novas experiências e projetos ao longo da carreira
+- Revisar periodicamente acessibilidade, desempenho e dependências
 
 ## Autor
 
